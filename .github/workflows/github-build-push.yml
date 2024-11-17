@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - docker-image-build
-    # paths:
-    #   - 'Dockerfile'
   workflow_dispatch:    
 jobs:
   build-and-push:
