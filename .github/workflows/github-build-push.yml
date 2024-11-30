@@ -46,16 +46,16 @@ jobs:
           build-args: |
             --env-file .env.example
 
-      - name: Build and Push Containers Production
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: Dockerfile
-          target: bolt-ai-production   
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: |
-            ghcr.io/${{ github.repository }}:production
-            ${{ secrets.DOCKER_USERNAME }}/bolt-ai:production
-          build-args: |
-            --env-file .env.example
+      # - name: Build and Push Containers Production
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: .
+      #     file: Dockerfile
+      #     target: bolt-ai-production   
+      #     platforms: linux/amd64,linux/arm64
+      #     push: true
+      #     tags: |
+      #       ghcr.io/${{ github.repository }}:production
+      #       ${{ secrets.DOCKER_USERNAME }}/bolt-ai:production
+      #     build-args: |
+      #       --env-file .env.example
