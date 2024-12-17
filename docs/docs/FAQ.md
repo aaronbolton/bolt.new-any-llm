@@ -23,7 +23,6 @@ Check out our [Contribution Guide](CONTRIBUTING.md) for more details on how to g
 
 ---
 
-
 ## What are the future plans for bolt.diy?
 
 Visit our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo) for the latest updates.  
@@ -70,6 +69,11 @@ To troubleshoot:
 
 ### **"Everything works, but the results are bad"**
 Local LLMs like Qwen-2.5-Coder are powerful for small applications but still experimental for larger projects. For better results, consider using larger models like GPT-4o, Claude 3.5 Sonnet, or DeepSeek Coder V2 236b.
+
+---
+
+### **"Miniflare or Wrangler errors in Windows"**
+You will need to make sure you have the latest version of Visual Studio C++ installed (14.40.33816), more information here https://github.com/stackblitz-labs/bolt.diy/issues/19.
 
 ---
 
