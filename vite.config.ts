@@ -90,6 +90,10 @@ export default defineConfig((config) => {
       __PKG_PEER_DEPENDENCIES: JSON.stringify(pkg.peerDependencies),
       __PKG_OPTIONAL_DEPENDENCIES: JSON.stringify(pkg.optionalDependencies),
     },
+    server: {
+      host: true,
+      allowedHosts: 'all'
+    },
     build: {
       target: 'esnext',
     },
