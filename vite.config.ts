@@ -92,7 +92,10 @@ export default defineConfig((config) => {
     },
     server: {
       host: true,
-      allowedHosts: 'all'
+      allowedHosts: [
+        'localhost',
+        'bolt.bukn.net'
+      ],
     },
     build: {
       target: 'esnext',
